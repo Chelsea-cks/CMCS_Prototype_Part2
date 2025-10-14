@@ -11,7 +11,6 @@ namespace CMCS_Prototype.Tests
         [TestInitialize]
         public void Init()
         {
-            // Clear store before each test
             while (ClaimStore.Claims.Any()) ClaimStore.Claims.RemoveAt(0);
         }
 
