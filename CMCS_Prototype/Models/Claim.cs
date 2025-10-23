@@ -44,13 +44,6 @@ namespace CMCS_Prototype.Models
             set { _status = value; OnPropertyChanged(nameof(Status)); }
         }
 
-        private string _supportingDocumentPath = string.Empty;
-        public string SupportingDocumentPath
-        {
-            get => _supportingDocumentPath;
-            set { _supportingDocumentPath = value; OnPropertyChanged(nameof(SupportingDocumentPath)); }
-        }
-
         public DateTime SubmittedOn { get; set; } = DateTime.UtcNow;
 
         public event PropertyChangedEventHandler? PropertyChanged;
